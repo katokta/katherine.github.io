@@ -1,41 +1,322 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-	<title>My Web</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mahasiswi SI UIB | Katherine Oktaviani</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>        
+    <script src="assets/js/script.js"></script>
 </head>
-<body>
-<div id="site-container">
-	<div id="header">
-		<h1><a href="index.html">My Blog</a></h1>
-		<p>Personal Blog</p>
-	</div><!-- End header -->
-	<div id="menu-content">
-		<div id="menu">
-			<h3 class ="judul_1">Main Menu</h3>
-			<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Profile</a></li>
-			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Download</a></li>
-			<li><a href="#">Contact</a></li>
-			</ul>
-		</div><!-- End menu -->
 
-		<div id="content">
-			<h1 class="judul_2">Welcome To My Blog's</h1>
-			<img src="img/Penguins.jpg" class="img"/>
-			<p>A webpage is a document, typically written in plain text interspersed with formatting instructions of Hypertext Markup Language (HTML, XHTML). A webpage may incorporate elements from other websites with suitable markup anchors.</p>
-			<p>Webpages are accessed and transported with the Hypertext Transfer Protocol (HTTP), which may optionally employ encryption (HTTP Secure, HTTPS) to provide security and privacy for the user of the webpage content. The user‘s application, often a web browser, renders the page content according to its HTML markup instructions onto a display terminal.</p>
-			<p>The pages of a website can usually be accessed from a simple Uniform Resource Locator (URL) called the web address.The URLs of the pages organize them into a hierarchy, although hyperlinking between them conveys the reader's perceived site structure and guides the reader's navigation of the site which generally includes a home page with most of the links to the site's web content, and a supplementary about, contact and link page.</p>
-			<p>Some websites require a subscription to access some or all of their content. Examples of subscription websites include many business sites, parts of news websites, academic journal websites, gaming websites, file-sharing websites, message boards, web-based email, social networking websites, websites providing real-time stock market data, and websites providing various other services (e.g., websites offering storing and/or sharing of images, files and so forth).</p>
+    <body>
+       <div class="container-fluid">
+           <div class="cover">
+               <div class="cover-layer">
+                   <div class="container web-portion">
+                       <div class="row top-det">
+                           <div class="col-md-4">
+                               <div class="profil-det-img d-flex">
+                                  <div class="dp">
+                                       <img src="assets/images/profile.jpg" alt="">
+                                  </div>
+                                  <div class="pd">
+                                      <h2>Katherine Oktaviani</h2>
+                                       <p>Newbie Programmer</p>
+                                  </div>
+                                   
+                               </div>
+                           </div>
+                           <div class="col-md-4 eml-mob">
+                               <ul>
+                                   <li><a href="mailto:oktavianikatherine@gmail.com?Subject=Hello"><i class="fas fa-envelope"></i> oktavianikatherine@gmail.com</a></li>
+                                   <li><i class="fas fa-phone-square"></i> +62 888 999 0780</li>
+                               </ul>
+                           </div>
+                           <div class="col-md-4 d-flex map-mark">
+                               <i class="fas fa-map-marker-alt"></i>
+                               <p>Batam Center, Batam</p>
+                           </div>
+                       </div>
+                       <div class="nav-detail">
+                           <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                               
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="contact" aria-selected="false">Resume</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="contact" aria-selected="false">Gallery</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Me</a>
+                              </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                  <div class="row no-margin home-det">
+                                      <div class="col-md-4 big-img">
+                                        <img src="assets/images/profile-big.jpg" alt="">
+                                      </div>
+                                      <div class="col-md-8 home-dat">
+                                          <div class="detal-jumbo">
+                                              <h3>Hello, I'm a college student</h3>
+                                              <p>I'm currently studying at UIB (Universitas Internasional Batam),
+                                                 majoring in computer studies.
+                                                 It's one of the most popular university in Batam.
+                                                 Computer study is rated A here and currently has 209 freshmen.</p>
+                                          </div>
+                                          <div class="links">
+                                          <div class="row ">
+                                              <div class="col-xl-6 col-md-12">
+                                                  <ul class="btn-link">
+                                                      <li>
+                                                          <a href=""><i class="fas fa-paper-plane"></i> Hire Me</a>
+                                                      </li>
+                                                      <li>
+                                                          <a href=""><i class="fas fa-cloud-download-alt"></i> Download Resume</a>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                              <div class="col-xl-6 col-md-12">
+                                                  <ul class="social-link">
+                                                      <li><a href="https://www.facebook.com/katherine.oktaviani.3"><i class="fab fa-facebook-f"></i></a></li>
+                                                      <li><a href="https://www.instagram.com/katherine.oktaviani/"><i class="fab fa-instagram"></i></a></li>
+                                                      <li><a href="https://www.youtube.com/channel/UCKhZos7G2iOLJgdtvrgbgQQ"><i class="fab fa-youtube"></i></a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="jumbo-address">
+                                         <div class="row no-margin">
+                                                  <div class="col-lg-6 no-padding">
+                                              
+                                                  <table class="addrss-list">
+                                                      <tbody><tr>
+                                                          <th>Position</th>
+                                                          <td>Student</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th>Nationality</th>
+                                                          <td>Indonesian</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th>Date of birth</th>
+                                                          <td>11-10-2000</td>
+                                                      </tr>
+                                                  </tbody></table>
+                                            
+                                          </div>
+                                          <div class="col-lg-6 no-padding">
+                                               <table class="addrss-list">
+                                                      <tbody><tr>
+                                                          <th>Experience</th>
+                                                          <td>2 Years</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th>Website</th>
+                                                          <td><a href="http://www.uib.ac.id/id/">www.uib.ac.id</a></td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th>Languages</th>
+                                                          <td>English,Indonesian,Chinese</td>
+                                                      </tr>
+                                                  </tbody></table>
+                                          </div>
+                                         </div>
+                                     
+                                      </div>
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                              <div class="tab-pane fade profile-tab" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                  <div class="profile-desic">
+                                          <p>Hello, I’m a computer student. I'm currently studying web design,
+                                             programming in Python, interactive design and basic Information System.
+                                             I like to learn, read, write and watch movies. Since the holidays, Monty Python
+                                             has been my favourite.</p>
+                                      </div>
+                                      <div class="sec-title">
+                                          <h2>Hobbies</h2>
+                                      </div>
+                                      <div class="row service-ro no-margin">
+                                          <div class="col-lg-4 col-md-6 singe-servic">    
+                                                 <i class="fab fa-delicious"></i>
+                                                  <h4>Web Design</h4>
+                                                  <p>With 0+ years of experience, I'm still learning the ropes.
+                                                     I'm hoping there will be a lot of projects for me to do.</p>
+                                          </div>
+                                          <div class="col-lg-4 col-md-6 singe-servic">    
+                                                 <i class="fas fa-code"></i>
+                                                  <h4>Programming</h4>
+                                                  <p>Luckily, I already have about 1+ years of experience in programming.
+                                                     I started learning programming for the Olympiads and programming has been a hobby ever since. I do have a love-hate relationship with it.</p>
+                                          </div>
+                                          <div class="col-lg-4 col-md-6 singe-servic">    
+                                                 <i class="fab fa-chrome"></i>
+                                                  <h4>Knitting</h4>
+                                                  <p>It's not my best, but I'm willing to try harder to make a beautiful design and 
+                                                     comfortable for everyday use.</p>
+                                          </div>
+                                          <div class="col-lg-4 col-md-6 singe-servic">    
+                                                 <i class="fab fa-android"></i>
+                                                  <h4>Android Development</h4>
+                                                  <p>This is one skill I would really like to learn. I understand that I need to prepare
+                                                     a lot for this. But I'm willing to try.</p>
+                                          </div>
+                                          <div class="col-lg-4 col-md-6 singe-servic">    
+                                                 <i class="fab fa-app-store-ios"></i>
+                                                  <h4>English</h4>
+                                                  <p>My English is quite well. I really love this language. It's a funny language.
+                                                     I'm hoping to have a chance teaching English.</p>
+                                          </div>
+                                          <div class="col-lg-4 col-md-6 singe-servic">    
+                                                 <i class="fas fa-mobile-alt"></i>
+                                                  <h4>Graphic Design</h4>
+                                                  <p>This is also a favourite. I love how everything could piece together
+                                                     nicely, how the end result could be affected by many processes.</p>
+                                          </div>
+                                      </div>
+                                  
+                              </div>
+                              <div class="tab-pane education-detail fade" id="education" role="tabpanel" aria-labelledby="contact-tab">
+                                  <div class="sec-title">
+                                        <h2>Education Details</h2>
+                                  </div>
+                                   <div class="service no-margin row">
+                                          <div class="col-sm-3 resume-dat serv-logo">
+                                              <h6>2019-2023</h6>
+                                            <p>Bachelors Degree</p>
+                                          </div>
+                                          <div class="col-sm-9 rgbf">
+                                              <h5>Universitas Internasional Batam</h5>
+                                              <p>Graduated at 2023.</p>
+                                          </div>
+                                      </div>
+                                      <div class="service no-margin row">
+                                          <div class="col-sm-3 resume-dat serv-logo">
+                                              <h6>2015-2018</h6>
+                                            <p>High School</p>
+                                          </div>
+                                          <div class="col-sm-9 rgbf">
+                                              <h5>SMAK Yos Sudarso Batam</h5>
+                                              <p>High school was fun. I took a gap-year before Uni.</p>
+                                          </div>
+                                      </div>
+                                      <div class="service no-margin row">
+                                          <div class="col-sm-3 resume-dat serv-logo">
+                                              <h6>2019-2023</h6>
+                                            <p>Bachelors Degree</p>
+                                          </div>
+                                          <div class="col-sm-9 rgbf">
+                                              <h5>Universitas Internasional Batam</h5>
+                                              <p>Graduated at 2023.</p>
+                                          </div>
+                                      </div>
+                                      <div class="service no-margin row">
+                                          <div class="col-sm-3 resume-dat serv-logo">
+                                              <h6>2015-2018</h6>
+                                            <p>High School</p>
+                                          </div>
+                                          <div class="col-sm-9 rgbf">
+                                              <h5>SMAK Yos Sudarso Batam</h5>
+                                              <p>High school was fun. I took a gap-year before Uni.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                   <div class="tab-pane portfolio-detail fade" id="portfolio" role="tabpanel" aria-labelledby="contact-tab">
+                                       <div class="row no-margin gallery">
+                                          <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_01.jpg" download><img src="assets/images/gallery/gallery_01.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_02.jpg" download><img src="assets/images/gallery/gallery_02.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_03.jpg" download><img src="assets/images/gallery/gallery_03.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_04.jpg" download><img src="assets/images/gallery/gallery_04.jpg" alt=""></a>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_05.jpg" download><img src="assets/images/gallery/gallery_05.png" alt=""></a>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_06.jpg" download><img src="assets/images/gallery/gallery_06.jpg" alt=""></a>
+                                          </div>
+                                           <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_07.jpg" download><img src="assets/images/gallery/gallery_07.jpg" alt=""></a>
+                                          </div>
+                                           <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_08.jpg" download><img src="assets/images/gallery/gallery_08.jpg" alt=""></a>
+                                          </div>
+                                           <div class="col-sm-4">
+                                              <a href="assets/images/gallery/gallery_09.jpg" download><img src="assets/images/gallery/gallery_09.jpg" alt=""></a>
+                                          </div>
+                                          
+                                      </div>
+                                   </div>
+                                   <div class="tab-pane portfolio-detail contact-tab fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                      <div class="row no-margin">
+                                          <div class="col-md-6 no-padding">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.05668747712!2d104.00085421399618!3d1.1195430991833903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98be09646b351%3A0x36a826082690c786!2sBatam%20International%20University!5e0!3m2!1sen!2sid!4v1571299609732!5m2!1sen!2sid" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div class="row cont-row no-margin">
+                                                  <div class="col-sm-6">
+                                                      <input placeholder="Enter Full Name" type="text" class="form-control form-control-sm">
+                                                  </div>
+                                                   <div class="col-sm-6">
+                                                      <input placeholder="Enter Email Address" type="text" class="form-control form-control-sm">
+                                                  </div>
+                                              </div>
+                                              <div class="row cont-row no-margin">
+                                                  <div class="col-sm-6">
+                                                      <input placeholder="Enter Mobile Number" type="text" class="form-control form-control-sm">
+                                                  </div>
+                                                   
+                                              </div>
+                                              <div class="row cont-row no-margin">
+                                                  <div class="col-sm-12">
+                                                     <textarea placeholder="Enter your Message" class="form-control form-control-sm" rows="10"></textarea>
+                                                  </div>
+                                                  
+                                              </div>
+                                              <div class="row cont-row no-margin">
+                                                  <div class="col-sm-6">
+                                                      <button class="btn btn-sm btn-success">Send Message</button>
+                                                  </div>
+                                                   
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div> 
+    </body>
 
-		</div><!-- End Content -->
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>        
+<script src="assets/js/script.js"></script>
 
-		<br class="floating">
-	</div><!-- End menu-content -->
 
-	<div id="footer"><p>Copyright &copy; 2013. Daniel Lim.</p></div><!-- End Footer -->
-</div><!-- End site container -->
-</body>
 </html>
